@@ -3,6 +3,8 @@ try:
     print('Ваше число', str)
     if str.find("-") == 1:
         raise Exception('spam', 'eggs')
+    if float(str) == True:
+        raise Exception('spam', 'eggs')
 except Exception as inst:
     print('Некорректный формат!')
 else:
