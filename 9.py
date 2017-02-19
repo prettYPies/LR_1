@@ -34,7 +34,7 @@ outMoney = {}
 k = 0
 inSum = int(input("Введите нужную сумму: "))
 if (inSum % 10 != 0):
-    print("Невозможно выдать данную сумму.")
+    print("Операция не может быть выполнена!")
     sys.exit([0])
 inSum = inputMoney (1000, inSum)
 inSum = inputMoney (500, inSum)
@@ -44,7 +44,7 @@ inSum = inputMoney (10, inSum)
 
 s = 0
 if (inSum != 0):
-    print ("Недостаточно денег!")
+    print ("Операция не может быть выполнена!")
     sys.exit([0])
 else:
     for i in outMoney.keys():
